@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>The Gossip Project</title>
+  </head>
+  <body style=" text-align: center">
+
+    <h1 style="color: DodgerBlue">OH MY GOSSIP</h1>
+
+    <% gossips.each do |gossip| %>
+        <h2 style="background-color:Tomato; color: white"> Voici la page potin n° <%= id%></h2>
+        <h3> Son auteur : </h3>
+          <%= gossip.author %><br/><br/>
+        <h3> Le contenu du potin : </h3>
+          <%= gossip.content %>
+    <% end %>
+
+    <br/><br/><br/><br/>
+
+  <a href="/" style="color: DodgerBlue">--> Reviens à la page principale <--</a><br/><br/>
+  <a href="<%= id%>/edit" style="color: DodgerBlue">--> Mofidifie ton potin <--</a>
+
+
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>Créer un potin</title>
+  </head>
+  <body style=" text-align: center">
+
+    <h1 style="color: DodgerBlue">OH MY GOSSIP</h1>
+
+    <h2 style="background-color:Tomato; color: white">Crée un potin !</h2>
+
+
+    <form action='/gossips/new/' method='POST'>
+
+      Saisi ici ton nom : <br/>
+
+    <input type='text' name='gossip_author' style="width: 20%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box;"/><br/><br/>
+
+      Balance ton potin : <br/>
+
+    <input type='text' name='gossip_content' style="width: 20%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box;"/><br/><br/>
+
+      <input type='submit' style="background-color: #4CAF50; border: none; color: white;padding: 16px 32px; text-decoration: none; margin: 4px 2px; cursor: pointer;"/>
+
+    </form>
+
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>The Gossip Project</title>
+  </head>
+  <body style=" text-align: center">
+
+    <h1 style="color: DodgerBlue">OH MY GOSSIP</h1>
+
+    <h2 style="background-color:Tomato; color: white">Voici les gossip du jour !</h2>
+    <p style="color: DodgerBlue; text-decoration: none;">S'il y en a pas, utilise le formulaire</p>
+
+
+    <a href="/gossips/new/" style="color: DodgerBlue; text-decoration: none">--> Formulaire des gossip <--</a>
+
+    <br/><br/>
+
+    <% id = 1 %>
+    <% gossips.each do |gossip| %>
+        <p><a href="gossips/<%=id%>" style="color: DodgerBlue; text-decoration: none; font-size: 30px">
+          <%= gossip.content %>
+        </p>
+        <% id += 1 %>
+      <% end %>
+
+  </body>
+</html>
